@@ -2,7 +2,7 @@ var bodyParser = require('body-parser');
 var urlencodeParser = bodyParser.urlencoded({extended: false});
 var mongoose = require('mongoose');
 
-var data = [{item: 'get milk'}, {item: 'walk dog'}, {item: 'kick some coding ass'}];
+var data = [{item: 'Learn React Hooks'}, {item: 'Feed my guinea pigs'}, {item: 'Watch Netflix'}];
 
 module.exports = app => {
    app.get('/todo', (req, res) => {
@@ -20,9 +20,5 @@ module.exports = app => {
       });
       res.json({todos: data});
    });
-
- 
-
-
 
 };
